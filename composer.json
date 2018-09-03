@@ -1,0 +1,24 @@
+{
+    "name": "suporte1/notification",
+    "description": "This is a library that uses composer as the basis for generating email notifications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael",
+            "email": "rafael.stefanovicz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }, 
+    "config": {
+        "vendor-dir": "lib_ext"
+    },
+    "autoload": {
+        "psr-4":{
+            "Notification\\": "_app"
+        }
+    }
+}
